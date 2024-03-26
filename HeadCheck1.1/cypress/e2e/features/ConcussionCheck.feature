@@ -12,6 +12,7 @@ Feature: Concussion check
 
     Given The user is on the Home page
     Then The user clicks on the Concussion Check button
+    And Accepts the T&C
     And I clicked on the Real Incident
     And I performed a self concussion check while answering Yes for any of the 1st five questions
     Then Verify the user is landed on the Contact Emergency screen

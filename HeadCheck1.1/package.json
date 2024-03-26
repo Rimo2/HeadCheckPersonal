@@ -6,9 +6,11 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:merge": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mocha/mochawesome.json",
+    "cy:merge": "mochawesome-merge cypress/reports/mocha/*.json -o cypress/reports/mocha/mochawesome.json",
     "cy:report": "marge cypress/reports/mocha/mochawesome.json -o cypress/reports/mocha",
-    "cy:run": "cypress run"
+    "cypress:run:mochawesome": "cypress run --reporter mochawesome",
+    "cy:run": "cypress run",
+    "cy:cypressCloud": "npx cypress run --record --key 00236d95-78fc-44f7-89d3-d2e1719776d2 --browser chrome"
   },
   "author": "Rimo",
   "license": "ISC",

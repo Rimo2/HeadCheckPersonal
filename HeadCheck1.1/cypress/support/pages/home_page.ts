@@ -16,6 +16,8 @@ export class Home_page extends BasePage {
     }
     visitWelcomePage(){
         cy.visit(BASE_URL);
+
+
     }
 
 
